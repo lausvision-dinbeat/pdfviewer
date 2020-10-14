@@ -11,7 +11,9 @@ import dinbeatlogo from './img/logo.png';
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'column',
-    backgroundColor: '#f0f3f7'
+    backgroundColor: '#f0f3f7',
+    margin: 15,
+
   },
   logo: {
     width: 150,
@@ -19,13 +21,13 @@ const styles = StyleSheet.create({
     left: 430,
   },
   clinicName: {
-
+    color: '#2C3B4D'
   },
   divPaciente: {
     backgroundColor: '#ebebee'
   },
   datosPaciente: {
-    color: '#2C3B4D'
+    color: '#eb6b30'
   },
 
 });
@@ -41,21 +43,21 @@ const MyDocument = () => (
         <Text style={styles.datosPaciente}>DATOS PACIENTE</Text>
         <View style={{flexDirection: 'row'}}>
           <View>
-              <Text>Nombre</Text>
-              <Text>Sexo</Text>
-              <Text>Raza</Text>
-              <Text>Peso</Text>
-              <Text>Fecha de nacimiento</Text>
+              <Text>Nombre:</Text>
+              <Text>Sexo:</Text>
+              <Text>Raza:</Text>
+              <Text>Peso:</Text>
+              <Text>Fecha de nacimiento:</Text>
           </View>
           <View>
-              <Text>Clínica de origen</Text>
-              <Text>Fecga demanda del servicio</Text>
-              <Text>Motivo del exámen</Text>
+              <Text>Clínica de origen:</Text>
+              <Text>Fecga demanda del servicio:</Text>
+              <Text>Motivo del exámen:</Text>
           </View>
         </View>
       </View>
-      <View style={styles.section}>
-        <Text>Section #3</Text>
+      <View style={styles.divAntecedentes}>
+        <Text style={styles.datosPaciente}>Antecedentes</Text>
       </View>
     </Page>
   </Document>
