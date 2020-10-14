@@ -54,11 +54,6 @@ const styles = StyleSheet.create({
     padding: 5,
   },
 
-  table: {
-    display: "table",
-    borderStyle: "solid",
-    borderWidth: 1,
-  },
  
 });
 
