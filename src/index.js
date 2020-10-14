@@ -20,15 +20,21 @@ const styles = StyleSheet.create({
   page: {
     flexDirection: "column",
     backgroundColor: "#f0f3f7",
+    padding: 15
   },
   logo: {
     width: 150,
     padding: 10,
-    left: 430,
+    left: 420,
   },
   text: {
     padding: "5",
     fontSize: 12,
+  },
+  textTable: {
+    padding: "5",
+    fontSize: 12,
+    paddingRight: '25',
   },
   clinicName: {
     color: "#2C3B4D",
@@ -53,12 +59,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
     padding: 5,
   },
-
- 
+  divlocation: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  textlocation: {
+    fontSize: 12,
+    color: 'grey',
+    padding: 5,
+  },
 });
 
 const MyDocument = () => (
-  <Document>
+  <Document title="reportDiagnosis.pdf" author="Dinbeat">
     <Page size="A4" style={styles.page}>
       <Image src={dinbeatlogo} alt="images" style={styles.logo} />
       <View style={styles.title}>
@@ -89,18 +102,56 @@ const MyDocument = () => (
         <Text style={styles.titleOrange}>ANÁLISI DEL ELECTROCARDIOGRAMA</Text>
         <View style={{ flexDirection: "row" }}>
           <View>
-            <Text style={styles.text}>Frecuencia cardíaca</Text>
-            <Text style={styles.text}>Ritmo cardíaco</Text>
-            <Text style={styles.text}>Onda P Amplitud</Text>
-            <Text style={styles.text}>Onda P Duración</Text>
-            <Text style={styles.text}>Intervalo PQ</Text>
-            <Text style={styles.text}>Complejo QRS</Text>
-            <Text style={styles.text}>Amplitud</Text>
-            <Text style={styles.text}>Duración</Text>
+            <Text style={styles.textTable}>Frecuencia cardíaca</Text>
+            <Text style={styles.textTable}>Ritmo cardíaco</Text>
+            <Text style={styles.textTable}>Onda P Amplitud</Text>
+            <Text style={styles.textTable}>Onda P Duración</Text>
+            <Text style={styles.textTable}>Intervalo PQ</Text>
+            <Text style={styles.textTable}>Complejo QRS</Text>
+            <Text style={styles.textTable}>Amplitud</Text>
+            <Text style={styles.textTable}>Duración</Text>
           </View>
-          
+          <View>
+            <Text style={styles.textTable}>120 lpm</Text>
+            <Text style={styles.textTable}>ritmo sinusoidal</Text>
+            <Text style={styles.textTable}>0.2 mV</Text>
+            <Text style={styles.textTable}>20 ms</Text>
+            <Text style={styles.textTable}>100 ms</Text>
+            <Text style={styles.textTable}> </Text>
+            <Text style={styles.textTable}>1.2 mV</Text>
+            <Text style={styles.textTable}>20 ms</Text>
+          </View>
+          <View>
+            <Text style={styles.textTable}>
+              adulto: 70-160 lpm | cachorro: 140-220 lpm
+            </Text>
+            <Text style={styles.textTable}> </Text>
+            <Text style={styles.textTable}>menor a 0.4 mV</Text>
+            <Text style={styles.textTable}>
+              menor a 40 ms (menor a 50 ms en razas grandes)
+            </Text>
+            <Text style={styles.textTable}>60-135 ms</Text>
+            <Text style={styles.textTable}> </Text>
+            <Text style={styles.textTable}>
+              menor a 2.5 mV (menor a 3 mV en razas grandes)
+            </Text>
+            <Text style={styles.textTable}>
+              menor a 50 ms (menor a 60 ms en razas grandes)
+            </Text>
+          </View>
         </View>
-        
+      </View>
+
+      <View
+        style={{
+          borderBottomColor: "grey",
+          borderBottomWidth: 1,
+        }}
+      />
+
+      <View style={styles.divlocation}>
+        <Text style={styles.textlocation}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+        <Text style={styles.textlocation}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
       </View>
 
       <View style={styles.divComentarios}>
