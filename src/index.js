@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
 import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import './index.css';
+
 
 //tutorial
 // https://codesandbox.io/s/react-pdf-demo-i1ted?from-embed=&file=/src/MovieList.jsx
@@ -36,21 +38,9 @@ const MyDocument = () => (
 
 
 const App = () => (
-  <PDFDownloadLink
-          document={<MyDocument />}
-          fileName="movielist.pdf"
-          style={{
-            textDecoration: "none",
-            padding: "10px",
-            color: "#4a4a4a",
-            backgroundColor: "#f2f2f2",
-            border: "1px solid #4a4a4a"
-          }}
-        >
-          {({ blob, url, loading, error }) =>
-            loading ? "Loading document..." : "Download Pdf"
-          }
-        </PDFDownloadLink>
+<PDFViewer className='pdfviewer'>
+<MyDocument/>
+</PDFViewer>
 
 );
  
