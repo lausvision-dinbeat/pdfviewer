@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   text: {
     padding: "5",
     fontSize: 12,
+    paddingRight: 5,
   },
   textTable: {
     padding: "5",
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ebebee",
   },
   titleOrange: {
-    color: "#eb6b30",
+    color: "#4BC7BB",
     fontSize: 14,
   },
   titleBlue: {
