@@ -108,9 +108,11 @@ const MyDocument = () => (
             <Text style={styles.textTable}>Onda P Amplitud</Text>
             <Text style={styles.textTable}>Onda P Duración</Text>
             <Text style={styles.textTable}>Intervalo PQ</Text>
-            <Text style={styles.textTable}>Complejo QRS</Text>
-            <Text style={styles.textTable}>Amplitud</Text>
-            <Text style={styles.textTable}>Duración</Text>
+            <Text style={styles.textTable}>QRS Amplitud</Text>
+            <Text style={styles.textTable}>QRS Duración</Text>
+            <Text style={styles.textTable}>Segmento ST</Text>
+            <Text style={styles.textTable}>Intervalo QT medio</Text>
+            <Text style={styles.textTable}>Onda T</Text>
           </View>
           <View>
             <Text style={styles.textTable}>120 lpm</Text>
@@ -118,9 +120,11 @@ const MyDocument = () => (
             <Text style={styles.textTable}>0.2 mV</Text>
             <Text style={styles.textTable}>20 ms</Text>
             <Text style={styles.textTable}>100 ms</Text>
-            <Text style={styles.textTable}> </Text>
             <Text style={styles.textTable}>1.2 mV</Text>
             <Text style={styles.textTable}>20 ms</Text>
+            <Text style={styles.textTable}>0.0 mV</Text>
+            <Text style={styles.textTable}>180 ms</Text>
+            <Text style={styles.textTable}>-0.3 mV</Text>
           </View>
           <View>
             <Text style={styles.textTable}>
@@ -132,12 +136,20 @@ const MyDocument = () => (
               menor a 40 ms (menor a 50 ms en razas grandes)
             </Text>
             <Text style={styles.textTable}>60-135 ms</Text>
-            <Text style={styles.textTable}> </Text>
             <Text style={styles.textTable}>
               menor a 2.5 mV (menor a 3 mV en razas grandes)
             </Text>
             <Text style={styles.textTable}>
               menor a 50 ms (menor a 60 ms en razas grandes)
+            </Text>
+            <Text style={styles.textTable}>
+              menor a 20 ms 
+            </Text>
+            <Text style={styles.textTable}>
+              150-250 ms
+            </Text>
+            <Text style={styles.textTable}>
+              menor a 1/4 amplitud onda R
             </Text>
           </View>
         </View>
